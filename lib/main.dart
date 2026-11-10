@@ -55,8 +55,22 @@ class Profil extends StatelessWidget {
                 radius: 25,
                 child: Icon(Icons.person),
               ),
+              SizedBox(height: 20,),
               Text('Muhammad Nathan Edyansyah',
-              style: TextStyle(fontSize: 20,fontWeight: FontWeight(20),
+              style: TextStyle(fontSize: 20,
+              fontWeight: FontWeight.bold
+              ),
+              ),
+              SizedBox(height: 20,),
+              Text('1124160098',
+              style: TextStyle(fontSize: 20,
+              fontWeight: FontWeight.bold
+              ),
+              ),
+              SizedBox(height: 20,),
+              Text('Texnik Informatika',
+              style: TextStyle(fontSize: 20,
+              fontWeight: FontWeight.bold
               ),
               ),
             ],
@@ -64,7 +78,15 @@ class Profil extends StatelessWidget {
         ),
         ),
       ),
-      floatingActionButton: FloatingActionButton(onPressed: onPressed),
+      floatingActionButton: FloatingActionButton(onPressed: (){
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('add')
+          )
+        );
+      },
+      tooltip: 'tambah',
+      child: Icon(Icons.add),
+      ),
     );
   }
 }
