@@ -61,17 +61,11 @@ class Profil extends StatelessWidget {
               fontWeight: FontWeight.bold
               ),
               ),
-              SizedBox(height: 20,),
-              Text('1124160098',
-              style: TextStyle(fontSize: 20,
-              fontWeight: FontWeight.bold
+              SizedBox(height: 5,),
+              Text('1124160098'
               ),
-              ),
-              SizedBox(height: 20,),
-              Text('Texnik Informatika',
-              style: TextStyle(fontSize: 20,
-              fontWeight: FontWeight.bold
-              ),
+              SizedBox(height: 5,),
+              Text('Texnik Informatika'
               ),
               Card(
                 child: Column(
@@ -96,6 +90,28 @@ class Profil extends StatelessWidget {
                       label: 'gitHub', 
                       value: 'NathanHihu.svg'
                       ),
+                  ],
+                ),
+              ),
+              Card(
+                child: 
+                Column(
+                  children: [
+                    info(
+                      icon: Icons.production_quantity_limits, 
+                      label: 'HOBI',
+                       value: 'ngaji',
+                       ),
+                       info(
+                      icon: Icons.production_quantity_limits, 
+                      label: 'HOBI',
+                       value: 'tidur',
+                       ),
+                       info(
+                      icon: Icons.production_quantity_limits, 
+                      label: 'HOBI',
+                       value: 'makan',
+                       ),
                   ],
                 ),
               )
