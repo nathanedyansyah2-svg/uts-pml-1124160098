@@ -55,11 +55,16 @@ class Profil extends StatelessWidget {
                 radius: 25,
                 child: Icon(Icons.person),
               ),
+              Text('Muhammad Nathan Edyansyah',
+              style: TextStyle(fontSize: 20,fontWeight: FontWeight(20),
+              ),
+              ),
             ],
           ),
         ),
         ),
       ),
+      floatingActionButton: FloatingActionButton(onPressed: onPressed),
     );
   }
 }
