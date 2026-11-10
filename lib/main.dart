@@ -73,6 +73,32 @@ class Profil extends StatelessWidget {
               fontWeight: FontWeight.bold
               ),
               ),
+              Card(
+                child: Column(
+                  children: [
+                    info(
+                      icon: Icons.email,
+                      label: 'gmail', 
+                      value: 'Nathan@gmail.com'
+                      ),
+                      info(
+                      icon: Icons.phone,
+                      label: 'No.Telpon', 
+                      value: '08455724782'
+                      ),
+                      info(
+                      icon: Icons.facebook,
+                      label: 'facebook', 
+                      value: 'NathanGaming'
+                      ),
+                      info(
+                      icon: Icons.g_mobiledata,
+                      label: 'gitHub', 
+                      value: 'NathanHihu.svg'
+                      ),
+                  ],
+                ),
+              )
             ],
           ),
         ),
@@ -87,6 +113,26 @@ class Profil extends StatelessWidget {
       tooltip: 'tambah',
       child: Icon(Icons.add),
       ),
+    );
+  }
+}
+class info extends StatelessWidget {
+  final IconData icon;
+  final String label;
+  final String value;
+
+  const info({super.key,
+  required this.icon,
+  required this.label,
+  required this.value,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return ListTile(
+      leading: Icon(icon),
+      title: Text(label),
+      subtitle: Text(value),
     );
   }
 }
