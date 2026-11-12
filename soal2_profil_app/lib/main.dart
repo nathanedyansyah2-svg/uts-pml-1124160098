@@ -23,7 +23,7 @@ class _MyAppState extends State<MyApp> {
       darkTheme: ThemeData(useMaterial3: true,
       brightness: Brightness.dark,
       colorScheme: ColorScheme.fromSeed(seedColor: Colors.red,
-      brightness: Brightness.dark)
+      brightness: Brightness.dark),
       ),
       themeMode: ThemeMode.system,
       home: LoginPage(),
