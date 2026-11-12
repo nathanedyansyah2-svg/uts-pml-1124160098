@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:soal2_profil_app/screens/about_page.dart';
+import 'package:soal2_profil_app/screens/profil_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
