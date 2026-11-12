@@ -65,7 +65,7 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 validator: (value) {
                   if (value == null || value.isEmpty){
-                    return 'Email gaboleh kosong mas';
+                    return 'Email gaboleh kosong ya mas';
                   }
                   return null;
                 },
@@ -83,7 +83,7 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 validator: (value) {
                   if (value == null || value.isEmpty){
-                    return 'Password gaboleh kosong mas';
+                    return 'Password gaboleh kosong ya mas';
                   }
                   return null;
                 },
@@ -116,7 +116,7 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 ),
                 ),
-              )
+              ),
           ],
         ),
         ),
