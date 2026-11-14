@@ -20,7 +20,7 @@ class ProfilePage extends StatelessWidget {
           children: [
             CircleAvatar(
               radius: 60,
-              child: Icon(
+                child: Icon(
                 Icons.person,
                 size: 60,
               ),
@@ -38,6 +38,12 @@ class ProfilePage extends StatelessWidget {
             style: TextStyle(
               fontSize: 15,
               color: Colors.grey,
+            ),
+            ),
+            SizedBox(height: 8,),
+            Text('Teknik Informatika',
+            style: TextStyle(
+              fontSize: 15,
             ),
             ),
             SizedBox(height: 8,),
@@ -61,25 +67,22 @@ class ProfilePage extends StatelessWidget {
                     ),
                     ),
                   ),
-                  Card(
-                    child: Center(
-                      child: Column(
-                        children: [
-                          SizedBox(height: 10,),
-                          Text(
-                              'Saya adalah mahasiswa Teknik Informatika'
-                              'yang memiliki ketertarikan dalam bidang'
-                              'teknologi, pemrograman, dan pengembangan'
+                 Column(
+                  children: [
+                    Center(
+                      child: Text(
+                              'Saya adalah mahasiswa Teknik Informatika '
+                              'yang memiliki ketertarikan dalam bidang '
+                              'teknologi, pemrograman, dan pengembangan '
                               'aplikasi mobile',
                               style: 
                               TextStyle(
                                 fontSize: 14,
                               ),
-                              ),
-                        ],
                       ),
-                    ),
-                  ),
+                    )
+                  ],
+                 ),
                   SizedBox(height: 30,),
                   Card(
                     child: Column(
@@ -119,26 +122,6 @@ class ProfilePage extends StatelessWidget {
         ),
         ),
       )
-    );
-  }
-}
-class infotile extends StatelessWidget {
-  final IconData icon;
-  final String label;
-  final String value;
-
-  const infotile({super.key,
-  required this.icon,
-  required this.label,
-  required this.value,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return ListTile(
-      leading: Icon(icon),
-      title: Text(label),
-      subtitle: Text(value),
     );
   }
 }
