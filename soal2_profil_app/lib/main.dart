@@ -12,21 +12,36 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+  bool isDarkMode = false;
+
+  void ubahTema(bool value) {
+    setState(() {
+      isDarkMode = value;
+    });
+  }
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Profil Mahasiswa',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(useMaterial3: true,
-      colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue)
+      colorScheme: ColorScheme.fromSeed(
+        seedColor: Colors.brown,
+        brightness: Brightness.light
+        ),
       ),
       darkTheme: ThemeData(useMaterial3: true,
       brightness: Brightness.dark,
-      colorScheme: ColorScheme.fromSeed(seedColor: Colors.red,
-      brightness: Brightness.dark),
+      colorScheme: ColorScheme.fromSeed(
+        seedColor: Colors.brown,
+        brightness: Brightness.dark,
+        ),
       ),
-      themeMode: ThemeMode.system,
-      home: LoginPage(),
+      themeMode: isDarkMode ? ThemeMode.dark : ThemeMode.light,
+      home: LoginPage(
+        isDarkMode: isDarkMode,
+        onThemeChanged: ubahTema,
+      ),
     );
   }
 }

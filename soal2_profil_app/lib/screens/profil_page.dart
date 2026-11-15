@@ -4,14 +4,19 @@ import 'package:soal2_profil_app/screens/about_page.dart';
 import 'package:soal2_profil_app/screens/edit_profil_page.dart';
 
 class ProfilePage extends StatefulWidget {
-  const ProfilePage({super.key});
+  final bool isDarkMode;
+  final ValueChanged<bool> onThemeChanged;
+  const ProfilePage({super.key,
+  required this.isDarkMode,
+  required this.onThemeChanged,
+  });
 
   @override
   State<ProfilePage> createState() => _ProfilePageState();
 }
 
 class _ProfilePageState extends State<ProfilePage> {
-
+  late bool isDarkMode;
   Profile profile =Profile(
     nama: 'Muhammad Nathan Edyansyah', 
     nim: '1124160098', 
@@ -22,6 +27,11 @@ class _ProfilePageState extends State<ProfilePage> {
     nohp: '085716976355', 
     github: 'nathanedyansyah2-svg',
     );
+  @override
+  void initState(){
+    super.initState();
+    isDarkMode = widget.isDarkMode;
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(

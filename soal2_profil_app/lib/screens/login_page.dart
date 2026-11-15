@@ -2,7 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:soal2_profil_app/screens/profil_page.dart';
 
 class LoginPage extends StatefulWidget {
-  const LoginPage({super.key});
+  final bool isDarkMode;
+  final ValueChanged<bool> onThemeChanged;
+  const LoginPage({super.key,
+  required this.isDarkMode,
+  required this.onThemeChanged,
+  });
 
   @override
   State<LoginPage> createState() => _LoginPageState();
@@ -97,7 +102,10 @@ class _LoginPageState extends State<LoginPage> {
                     Navigator.pushReplacement(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => ProfilePage(),
+                        builder: (context) => ProfilePage(
+                          isDarkMode: widget.isDarkMode,
+                          onThemeChanged: widget.onThemeChanged,
+                        ),
                         ) 
                       );
                   }
