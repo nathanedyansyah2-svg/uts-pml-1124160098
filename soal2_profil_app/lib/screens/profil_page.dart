@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:soal2_profil_app/models/profile.dart';
+import 'package:soal2_profil_app/screens/edit_profil_page.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
@@ -10,7 +11,7 @@ class ProfilePage extends StatefulWidget {
 
 class _ProfilePageState extends State<ProfilePage> {
 
-  final Profile profile =Profile(
+  Profile profile =Profile(
     nama: 'Muhammad Nathan Edyansyah', 
     nim: '1124160098', 
     prodi: 'Teknik Informatika', 
@@ -23,6 +24,46 @@ class _ProfilePageState extends State<ProfilePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            DrawerHeader(
+              decoration: BoxDecoration(
+                color: Colors.brown,
+              ),
+              child: Text('Navigasi',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+              ),
+              ),
+            ),
+            ListTile(
+              leading: Icon(Icons.edit),
+              title: Text('Edit profil'),
+              onTap: () async {
+                Navigator.pop(context);
+                final Profile? profileBaru = await Navigator.push(context,
+                 MaterialPageRoute(
+                  builder: (context) => EditProfilPage(
+                    profile: profile,
+                    ),
+                    ),
+                    );
+                    if (!mounted) return;
+
+                    if (profileBaru != null) {
+                      setState(() {
+                        profile = profileBaru;
+                      });
+                    }
+              },
+            )
+          ],
+        ),
+      ),
       appBar: AppBar(
         title: const Text('Profil Mahasiswa'),
         backgroundColor: Colors.brown,
@@ -90,7 +131,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   children: [
                     Center(
                       child: Text(
-                              profile.bio,
+                            profile.bio,
                               style: 
                               TextStyle(
                                 fontSize: 14,
