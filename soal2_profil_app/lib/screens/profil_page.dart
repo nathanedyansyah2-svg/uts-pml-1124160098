@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:soal2_profil_app/models/profile.dart';
+import 'package:soal2_profil_app/screens/about_page.dart';
 import 'package:soal2_profil_app/screens/edit_profil_page.dart';
 
 class ProfilePage extends StatefulWidget {
@@ -59,6 +60,19 @@ class _ProfilePageState extends State<ProfilePage> {
                         profile = profileBaru;
                       });
                     }
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.person),
+              title: Text('Tentang Saya'),
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.push(
+                  context, 
+                  MaterialPageRoute(
+                    builder: (context) => AboutPage(),
+                    ),
+                  );
               },
             ),
           ],
