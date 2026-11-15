@@ -19,7 +19,7 @@ class _ProfilePageState extends State<ProfilePage> {
     bio: 'Saya adalah mahasiswa teknik informatika yang memiliki ketertarikan dalam bidang teknologi, pemrograman, dan pengembangan aplikasi mobile. ', 
     email: 'nathanedyansyah2@gmail.com', 
     nohp: '085716976355', 
-    github: 'nathanedyansyah2-svg'
+    github: 'nathanedyansyah2-svg',
     );
   @override
   Widget build(BuildContext context) {
