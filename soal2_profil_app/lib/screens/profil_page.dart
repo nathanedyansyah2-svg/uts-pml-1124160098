@@ -85,6 +85,17 @@ class _ProfilePageState extends State<ProfilePage> {
                   );
               },
             ),
+            SwitchListTile(
+              secondary: Icon(Icons.dark_mode),
+              title: Text('Mode Gelap'),
+              value: isDarkMode,
+              onChanged: (value) {
+                setState(() {
+                  isDarkMode = value;
+                });
+                widget.onThemeChanged(value);
+              },
+              )
           ],
         ),
       ),
@@ -102,10 +113,10 @@ class _ProfilePageState extends State<ProfilePage> {
           children: [
             CircleAvatar(
               radius: 60,
-                child: Icon(
+               child: Icon(
                 Icons.person,
                 size: 60,
-              ),
+               ),
             ),
             SizedBox(height: 20,),
             Text(
