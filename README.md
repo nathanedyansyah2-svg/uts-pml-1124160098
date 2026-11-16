@@ -1,3 +1,4 @@
+
 ## Identitas Mahasiswa
 
 - **Nama:** Muhammad Nathan Edyansyah
@@ -16,19 +17,22 @@ Video demonstrasi aplikasi dapat dilihat melalui tautan berikut:
 
 ### 1. Halaman Login
 
-![Halaman Login](screenshots/login.jpg)
+<img width="575" height="1280" alt="WhatsApp Image " src="https://github.com/user-attachments/assets/a2e7d5ad-1de6-4aba-9688-554c2fa7a188" />
+
 
 ### 2. Halaman Profil
 
-![Halaman Profil](screenshots/profil.jpg)
+<img width="575" height="1280" alt="WhatsApp Image 2026-11-16 at 15 48 00" src="https://github.com/user-attachments/assets/090e97c0-bec7-46df-a202-6abee70df638" />
+
 
 ### 3. Halaman Edit Profil
 
-![Halaman Edit Profil](screenshots/edit-profil.jpg)
+<img width="575" height="1280" alt="WhatsApp Image 2" src="https://github.com/user-attachments/assets/a49e0d15-4a14-4715-ac74-ca9664ad934c" />
+
 
 ### 4. Halaman Tentang Saya
 
-![Halaman Tentang Saya](screenshots/about.jpg)
+<img width="575" height="1280" alt="WhatsApp Image 3" src="https://github.com/user-attachments/assets/a684f1ba-9b25-4a95-9e31-7cb3f1b71581" />
 
 ## Fitur Aplikasi
 
