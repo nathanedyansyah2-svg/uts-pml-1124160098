@@ -211,6 +211,14 @@ class _ProfilePageState extends State<ProfilePage> {
         ),
         ),
       ),
+      floatingActionButton: FloatingActionButton(onPressed: (){
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('TERIMAKASIH SUDAH MENGUNJUNGI PROFIL SAYA'))
+        );
+      },
+      tooltip: 'Klik ini',
+      child: Icon(Icons.thumb_up_outlined),
+      ),
     );
   }
 }
