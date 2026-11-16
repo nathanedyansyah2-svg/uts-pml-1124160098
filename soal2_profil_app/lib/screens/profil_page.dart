@@ -113,10 +113,7 @@ class _ProfilePageState extends State<ProfilePage> {
           children: [
             CircleAvatar(
               radius: 60,
-               child: Icon(
-                Icons.person,
-                size: 60,
-               ),
+               backgroundImage: AssetImage('assets/images/foto_saya.jpg'),
             ),
             SizedBox(height: 20,),
             Text(
