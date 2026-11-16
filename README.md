@@ -99,10 +99,3 @@ flutter pub get
 ```bash
 flutter run
 ```
-
-## APK Release
-
-Aplikasi ini memiliki versi release `v1.0.0`.
-
-- **Release:** [Lihat Release v1.0.0](https://github.com/nathanedyansyah2-svg/uts-pml-1124160098/releases/tag/v1.0.0)
-- **APK:** [Download APK](MASUKKAN_LINK_APK)
