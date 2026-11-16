@@ -11,7 +11,7 @@
 
 Video demonstrasi aplikasi dapat dilihat melalui tautan berikut:
 
-[Link Video YouTube](MASUKKAN_LINK_VIDEO_YOUTUBE)
+https://youtu.be/poXnnfYBtKk
 
 ## Screenshot Aplikasi
 
